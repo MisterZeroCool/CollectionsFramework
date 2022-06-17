@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.TreeMap;
 //Создаётся отображение в древовидной структуре.  В классе TreeMap
 // предоставляется эффективное средство для хранения пар ключ-значение
-// в сортировочном порядке и обеспечивается их быстрое излечение
+// в отсортированном порядке и обеспечивается их быстрое излечение.
 // гарантирует что элементы будут отсортированы по порядку нарастания
 // ключей.
 public class TreeMapDemo {
@@ -30,7 +30,7 @@ public class TreeMapDemo {
             System.out.println(me.getValue());
         }
         System.out.println();
-
+        //изменение остатка на счете
         double balance = tm.get(name);
         tm.put(name,balance + 1000);
         System.out.println("Новый остаток на счету " + name+" : " + tm.get(name));
